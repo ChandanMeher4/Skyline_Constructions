@@ -18,7 +18,10 @@ router.post('/', async (req, res) => {
     description: req.body.description,
     imageUrl: req.body.imageUrl,
     location: req.body.location,
-    category: req.body.category
+    category: req.body.category,
+    companyName: req.body.companyName,
+    companyEmail: req.body.companyEmail,
+    priceRange: req.body.priceRange
   });
 
   try {

@@ -7,6 +7,9 @@ const ProjectSchema = new mongoose.Schema(
     imageUrl: String,
     location: String,
     category: { type: String, default: "Residential" },
+    companyName: {type: String, required: true},
+    companyEmail: String,
+    priceRange: String
   },
   { timestamps: true }
 );
