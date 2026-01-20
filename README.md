@@ -108,8 +108,8 @@ npm install
 Create a `.env` file inside `server/`:
 
 ```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
+PORT = 5000
+MONGO_URI = mongodb+srv://mchandan1204_db_user:Skyline%401234@cluster0.nsj6bti.mongodb.net/?appName=Cluster0
 ```
 
 Start the backend server:
