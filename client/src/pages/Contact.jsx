@@ -18,19 +18,15 @@ const Contact = () => {
     e.preventDefault();
     setStatus("Sending...");
 
-    // try {
-    //   await axios.post("http://localhost:5000/api/contact", formData);
-
-    //   setStatus("Message Sent Successfully!\n We will get back to you soon.");
-    //   setFormData({ name: "", email: "", message: "" });
-    // } catch (error) {
-    //   console.error(error);
-    //   setStatus("Failed to send message. Please try again.");
-    // }
-      //await axios.post("http://localhost:5000/api/contact", formData);
+    try {
+      await axios.post("http://localhost:5000/api/contact", formData);
 
       setStatus("Message Sent Successfully!\n We will get back to you soon.");
       setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error(error);
+      setStatus("Failed to send message. Please try again.");
+    }
   };
 
   return (
